@@ -5,7 +5,7 @@ const Home = () => {
 
     const [joke, setJoke] = useState("");
     const [punchline, setPunchline] = useState("");
-    const [showPunchline, setShowPunchline] = useState(false)
+    const [showPunchline, setShowPunchline] = useState(false);
 
 
     const handleSubmit = (e) => {
@@ -21,7 +21,6 @@ const Home = () => {
             const {setup, punchline} = res.data.body[0];
             setJoke(setup);
             setPunchline(punchline);
-            setShowPunchline(true);
         }).catch(err => {
             console.log(err);
         })
