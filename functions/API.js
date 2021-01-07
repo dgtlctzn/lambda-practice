@@ -12,7 +12,7 @@ var options = {
 exports.handler = async (event, context) => {
     const {data} = await axios(options);
     return {
-        status: 200,
-        body: data
+        statusCode: 200,
+        body: JSON.stringify(data)
     }
 };
