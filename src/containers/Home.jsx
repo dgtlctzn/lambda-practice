@@ -5,10 +5,11 @@ const Home = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log("click")
 
         axios({
             method: "GET",
-            url: "/.netlify/functions/API"
+            url: "https://silly-poitras-9c824a.netlify.app/.netlify/functions/API"
         }).then(res => {
             console.log(res);
         }).catch(err => {
