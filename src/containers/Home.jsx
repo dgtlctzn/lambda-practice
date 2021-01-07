@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <h1>Want to hear a joke?</h1>
-            <button onSubmit={handleSubmit}>Yes</button>
+            <button onSubmit={(e) => handleSubmit(e)}>Yes</button>
             <p>{joke}</p>
         </div>
     );
