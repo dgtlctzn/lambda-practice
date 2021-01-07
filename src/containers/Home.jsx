@@ -14,7 +14,7 @@ const Home = () => {
             url: "https://silly-poitras-9c824a.netlify.app/.netlify/functions/API"
         }).then(res => {
             console.log(res);
-            setJoke(res.body.setup + "\n" + res.body.punchline);
+            setJoke(res.data.body.setup + "\n" + res.data.body.punchline);
         }).catch(err => {
             console.log(err);
         })
